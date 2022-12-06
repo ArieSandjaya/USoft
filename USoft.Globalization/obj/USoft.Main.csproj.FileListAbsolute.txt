@@ -1,0 +1,7 @@
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Main\bin\Debug\USoft.Main.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Main\bin\Debug\USoft.Main.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Main\bin\Debug\UFinance.Common.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Main\bin\Debug\UFinance.Common.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Main\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Main\obj\Debug\USoft.Main.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Main\obj\Debug\USoft.Main.pdb

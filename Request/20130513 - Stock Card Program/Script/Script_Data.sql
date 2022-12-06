@@ -1,0 +1,86 @@
+begin tran abc123
+
+----* MsMenu
+--delete from MsMenu
+--where MenuId in ('115100','115101')
+--
+--insert into MsMenu (
+--	MenuId,
+--	MenuName,
+--	MenuParent,
+--	MenuLink,
+--	MenuActive,
+--	ReportId,
+--	Parameter
+--) values (
+--	'115100',
+--	'Purchase',
+--	'115000',
+--	NULL,
+--	'Y',
+--	NULL,
+--	NULL
+--)
+--
+--insert into MsMenu (
+--	MenuId,
+--	MenuName,
+--	MenuParent,
+--	MenuLink,
+--	MenuActive,
+--	ReportId,
+--	Parameter
+--) values (
+--	'115101',
+--	'Purchase Request',
+--	'115100',
+--	'Modules/GeneralAffair/Purchase/PurchaseRequest.aspx',
+--	'Y',
+--	NULL,
+--	NULL
+--)
+--
+--select * from MsMenu where MenuId like '115%' order by MenuId
+--
+----* MsUserMenu
+--delete from MsUserMenu
+--where MenuId in ('115100','115101')
+--
+--insert into MsUserMenu (
+--	UserId,
+--	MenuId,
+--	InsertDt,
+--	UpdateDt,
+--	DeleteDt,
+--	ViewDt
+--) values (
+--	'arie',
+--	'115100',
+--	0,
+--	0,
+--	0,
+--	1	
+--)
+--
+--insert into MsUserMenu (
+--	UserId,
+--	MenuId,
+--	InsertDt,
+--	UpdateDt,
+--	DeleteDt,
+--	ViewDt
+--) values (
+--	'arie',
+--	'115101',
+--	1,
+--	1,
+--	1,
+--	1	
+--)
+--
+--select * from MsUserMenu where MenuId like '115%' order by MenuId
+
+--* Menu Search
+115101
+
+rollback tran abc123

@@ -1,0 +1,20 @@
+D:\U-Soft\U-Soft.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\U-Soft\U-Soft.Common\obj\Debug\UFinance.Common.dll
+D:\U-Soft\U-Soft.Common\obj\Debug\UFinance.Common.pdb
+D:\U-Soft\U-Soft.Common\bin\Debug\UFinance.Common.dll
+D:\U-Soft\U-Soft.Common\bin\Debug\UFinance.Common.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft.Common\bin\Debug\UFinance.Common.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft.Common\bin\Debug\UFinance.Common.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft.Common\obj\Debug\UFinance.Common.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft.Common\obj\Debug\UFinance.Common.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft.Common\bin\Debug\UFinance.Common.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft.Common\bin\Debug\UFinance.Common.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft.Common\obj\Debug\UFinance.Common.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft.Common\obj\Debug\UFinance.Common.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft.Common\bin\Debug\UFinance.Common.dll
+D:\Soft\U-Soft\U-Soft\U-Soft.Common\bin\Debug\UFinance.Common.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\Soft\U-Soft\U-Soft\U-Soft.Common\obj\Debug\UFinance.Common.dll
+D:\Soft\U-Soft\U-Soft\U-Soft.Common\obj\Debug\UFinance.Common.pdb

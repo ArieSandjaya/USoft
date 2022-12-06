@@ -1,0 +1,10 @@
+DBRefFolders found in your dbp file
+Connect String: Data Source=192.168.1.46;Initial Catalog=USOFT_DEMO;User ID=ugets_apps
+Provider: Microsoft SQL Server
+
+Connect String: Data Source=192.168.1.254;Initial Catalog=USOFT_DEMO;User ID=ugets_apps
+Provider: Microsoft SQL Server
+
+Connect String: Data Source=192.168.1.254;Initial Catalog=USOFT_UAT;User ID=ugets_Apps
+Provider: Microsoft SQL Server
+

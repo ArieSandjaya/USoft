@@ -1,0 +1,24 @@
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\bin\Debug\USoft.Accounting.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\bin\Debug\USoft.Accounting.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\bin\Debug\UFinance.Common.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\bin\Debug\UFinance.Common.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\obj\Debug\USoft.Accounting.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\obj\Debug\USoft.Accounting.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\bin\Debug\USoft.Globalization.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\bin\Debug\AjaxControlToolkit.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\bin\Debug\USoft.AccordionMenu.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\bin\Debug\USoft.Globalization.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Accounting\bin\Debug\USoft.AccordionMenu.pdb
+D:\U-Soft\USoft.Accounting\bin\Debug\USoft.Accounting.dll
+D:\U-Soft\USoft.Accounting\bin\Debug\USoft.Accounting.pdb
+D:\U-Soft\USoft.Accounting\bin\Debug\UFinance.Common.dll
+D:\U-Soft\USoft.Accounting\bin\Debug\USoft.Globalization.dll
+D:\U-Soft\USoft.Accounting\bin\Debug\AjaxControlToolkit.dll
+D:\U-Soft\USoft.Accounting\bin\Debug\USoft.AccordionMenu.dll
+D:\U-Soft\USoft.Accounting\bin\Debug\UFinance.Common.pdb
+D:\U-Soft\USoft.Accounting\bin\Debug\USoft.Globalization.pdb
+D:\U-Soft\USoft.Accounting\bin\Debug\USoft.AccordionMenu.pdb
+D:\U-Soft\USoft.Accounting\obj\Debug\ResolveAssemblyReference.cache
+D:\U-Soft\USoft.Accounting\obj\Debug\USoft.Accounting.dll
+D:\U-Soft\USoft.Accounting\obj\Debug\USoft.Accounting.pdb

@@ -1,0 +1,151 @@
+.ui-layout-center,.ui-layout-west,.ui-layout-east,.ui-layout-east .ui-layout-content{padding: 0;overflow: hidden;width:100%;}
+.ui-layout-center .ui-layout-content {line-height:1.4em;margin:0;width:100%;}
+/*h3, h4 {font-size:1.1em;background:#EEF;padding:7px 10px;margin:0;}*/
+.ui-layout-east h4 {font-size:0.9em;font-weight:normal;border-width:1px 0 0;}
+body{font: 75% "Trebuchet MS" , sans-serif;margin: 0px;}
+.demoHeaders { margin-top: 2em; }
+#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+ul#icons {margin: 0; padding: 0;}
+ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+ul#icons span.ui-icon {float: left; margin: 0 4px;}
+.loadingPopup{border: 2px;padding: 4px;border-color: Black;position: fixed;top: 50%;left: 50%;visibility: hidden;}
+.handle{width:16px;height:16px;background-image:url(../images/HandleGrip.png);overflow:hidden;cursor:se-resize;}
+.frameText{width:100px;height:100px;overflow:auto;float:left;background-color:#ffffff;border-style:solid;border-width:2px;border-color:Gray;font-family:Helvetica;line-height:normal;}
+.resizingText{padding:0px;border-style:solid;border-width:2px;border-color:#7391BA;}
+.hide{display:none;} 
+.show{display:true;} 
+.watermark {color: #CCCCCC;}
+.T28{border-right: #4297d7 1px solid;border-top: #4297d7 1px solid;padding-left: 4px;border-left: #4297d7 1px solid;color: #000000;font-size:10px;border-bottom: #4297d7 1px solid;font-family: 'Arial';}
+.B01{height:22px; width: 52px;font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;font-size: 0.9em;}
+.D01{font-family: Arial;font-size: 0.9em;border-bottom: #4297d7 1px solid;border-left: #4297d7 1px solid;border-top: #4297d7 1px solid;border-right: #4297d7 1px solid;}
+.L01{font-family: Arial;font-size: 0.9em;}
+.T10{width:100%;height:100%;border: solid 0px #999999;}
+.T27{border-right: #0b3d91 1px solid;border-top: #0b3d91 1px solid;border-left: #0b3d91 1px solid;border-bottom: #0b3d91 1px solid;height:26;}
+.T27 td{padding-right: 4px;padding-left: 6px;font-weight: bold;font-size: 16px;padding-bottom: 1px;color: #0b3d91;padding-top: 1px;font-family: Arial, Helvetica, sans-serif;}
+.T27 span{}
+.T15{padding-right: 4px;border-top: #ff6633 1px solid;padding-left: 6px;font-weight: bold;font-size: 16px;padding-bottom: 1px;border-left: #ff6633 1px solid;color: #0b3d91;padding-top: 1px;border-bottom: #ff6633 1px solid;font-family: Arial, Helvetica, sans-serif;}
+.T16{border-right: #ff6633 1px solid;padding-right: 4px;border-top: #ff6633 1px solid;padding-left: 6px;font-weight: bold;font-size: 16px;padding-bottom: 1px;color: #ff6633;padding-top: 1px;border-bottom: #ff6633 1px solid;font-family: Arial, Helvetica, sans-serif;text-align:right;width:20%;}
+.T14{border-top-width: 0px;border-left-width: 1px;border-left-color: #ebffdc;border-bottom-width: 1px;border-bottom-color: #ebffdc;border-top-color: #ebffdc;border-right-width: 1px;border-right-color: #ebffdc;}
+.T07{padding:0 10 0 10;vertical-align:top;width : 100%;}
+.T01{width:100%;height:100%;}
+.T17{padding-right: 3px;padding-left: 8px;padding-bottom: 0px;width: 200px;color: #5674b9;padding-top: 0px;height: 16px;text-align: right;}
+.T17 span{font-family: Verdana, Arial, Helvetica, sans-serif;font-weight: bold;font-size: 10px;}
+.T19{padding-right: 0px;padding-left: 10px;padding-bottom: 0px;color: #3d3d3d;padding-top: 0px;height: 16px;}
+.T19 span{font-family: Verdana, Arial, Helvetica, sans-serif;font-weight: bold;font-size: 10px;}
+.T19 input{font-family: Verdana, Arial, Helvetica, sans-serif;font-weight: bold;font-size: 10px;}
+.T19 textarea{font-family: Verdana, Arial, Helvetica, sans-serif;font-weight: bold;font-size: 10px;}
+.T26{}
+.T26 td{border-top-width: 0px;border-left-width: 1px;border-left-color: #ebffdc;border-bottom-width: 1px;border-bottom-color: #ebffdc;border-top-color: #ebffdc;border-right-width: 1px;border-right-color: #ebffdc;}
+.T09{border-color: #e6e6e6 black black #e6e6e6; border-style: solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;width:100%;}
+.L04{font-weight: bold;font-size: 11px;font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+/* Custom Style */
+.ui-resizable-se 
+{
+	bottom: 17px;
+}
+span.reqMark 
+{
+	font-weight:bold;
+	color:#FF0000;
+}
+td.form_table_title
+{
+	height: 22px;
+	background-color: #F4F4F4;
+	padding-left:5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+}
+td.form_table 
+{
+	height: 22px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+}
+td.form_table_sepp
+{
+	height: 22px;
+	text-align: center;
+	width:7px;
+}
+.form_table_btn
+{
+	text-align: right;
+}
+.InfoWarn 
+{
+	color:Red;
+}
+.MenuLink 
+{
+	text-decoration:none;
+}
+.text-number 
+{
+	text-align:right;
+}
+
+/* Header */
+.divHeader1
+{
+	font-size:1.1em;
+	background:#ECF;
+	padding:7px 10px;
+	margin:0;
+	font-weight:bold;
+}
+
+.divHeader2 
+{
+	font-size:1.1em;
+	background:#EEF;
+	padding:7px 10px;
+	margin:0;
+	font-weight:bold;
+	border-bottom: 1px solid #F4F4F4;
+}
+
+/* Paging */
+.tblPager 
+{
+	width: 98%;
+	text-align: center;
+}
+
+.tdPagerNav 
+{
+	text-align: left;
+}
+
+.tdPagerInfo
+{
+	text-align: right;
+}
+
+.spanPagerGo 
+{
+	margin-bottom:20px;
+}
+.lblBlack
+{
+	font-weight:bold;
+}
+.lblRed
+{
+	font-weight:bold;
+	color: Red;
+}
+.lblGreen
+{
+	font-weight:bold;
+	color: Green;
+}
+.lblBlue
+{
+	font-weight:bold;
+	color: Blue;
+}

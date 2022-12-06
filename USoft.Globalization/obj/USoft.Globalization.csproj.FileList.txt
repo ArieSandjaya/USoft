@@ -1,0 +1,10 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\USoft.Globalization.dll
+bin\Debug\USoft.Globalization.pdb
+bin\Debug\System.Web.Extensions.dll
+bin\Debug\UFinance.Common.dll
+bin\Debug\USoft.AccordionMenu.dll
+bin\Debug\UFinance.Common.pdb
+bin\Debug\USoft.AccordionMenu.pdb
+obj\Debug\USoft.Globalization.dll
+obj\Debug\USoft.Globalization.pdb

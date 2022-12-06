@@ -1,0 +1,113 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D5F265A-845A-4DD8-A5DF-1FCFC530431F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>USoft.DataAccess</RootNamespace>
+    <AssemblyName>USoft.DataAccess</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compliance\HRiskCountry.cs" />
+    <Compile Include="Entities\Compliance\HRiskCountry.cs" />
+    <Compile Include="Entities\Email.cs" />
+    <Compile Include="Entities\EntitiesHelper.cs" />
+    <Compile Include="Entities\General Affair\Item.cs" />
+    <Compile Include="Entities\General Affair\Master\ItemCategory.cs" />
+    <Compile Include="Entities\General Affair\Master\ItemGroup.cs" />
+    <Compile Include="Entities\General Affair\Master\ItemType.cs" />
+    <Compile Include="Entities\General Affair\Purchase.cs" />
+    <Compile Include="Entities\General.cs" />
+    <Compile Include="Entities\IT\ActivityTask.cs" />
+    <Compile Include="Entities\IT\DomainUsers.cs" />
+    <Compile Include="Entities\IT\Item.cs" />
+    <Compile Include="Entities\IT\Master\ItemType.cs" />
+    <Compile Include="Entities\IT\Master\ProblemType.cs" />
+    <Compile Include="Entities\IT\ScheduleTask.cs" />
+    <Compile Include="Entities\Marketing\CashReward.cs" />
+    <Compile Include="Entities\Marketing\CashRewardDetail.cs" />
+    <Compile Include="Entities\Master\BankGroup.cs" />
+    <Compile Include="Entities\Master\Branch.cs" />
+    <Compile Include="Entities\Master\Condition.cs" />
+    <Compile Include="Entities\Master\Currency.cs" />
+    <Compile Include="Entities\Master\Departement.cs" />
+    <Compile Include="Entities\Master\MappingApproval.cs" />
+    <Compile Include="Entities\Master\Measurement.cs" />
+    <Compile Include="Entities\Master\Privilege.cs" />
+    <Compile Include="Entities\General Affair\Master\Supplier.cs" />
+    <Compile Include="Entities\Master\Supplier.cs" />
+    <Compile Include="Entities\Master\Users.cs" />
+    <Compile Include="General Affair\Item.cs" />
+    <Compile Include="General Affair\Master\ItemCategory.cs" />
+    <Compile Include="General Affair\Master\ItemGroup.cs" />
+    <Compile Include="General Affair\Master\ItemType.cs" />
+    <Compile Include="General Affair\Purchase.cs" />
+    <Compile Include="General\Common.cs" />
+    <Compile Include="General\Email.cs" />
+    <Compile Include="Entities\UserInfo.cs" />
+    <Compile Include="General\UserInfo.cs" />
+    <Compile Include="IT\ActivityTask.cs" />
+    <Compile Include="IT\DomainUsers.cs" />
+    <Compile Include="IT\Item.cs" />
+    <Compile Include="IT\Master\ItemType.cs" />
+    <Compile Include="IT\Master\ProblemType.cs" />
+    <Compile Include="IT\ScheduleTask.cs" />
+    <Compile Include="Marketing\CashReward.cs" />
+    <Compile Include="Master\BankGroup.cs" />
+    <Compile Include="Master\Branch.cs" />
+    <Compile Include="Master\Condition.cs" />
+    <Compile Include="Master\Currency.cs" />
+    <Compile Include="Master\Departement.cs" />
+    <Compile Include="Master\MappingApproval.cs" />
+    <Compile Include="Master\Measurement.cs" />
+    <Compile Include="Master\Privilege.cs" />
+    <Compile Include="General Affair\Master\Supplier.cs" />
+    <Compile Include="Master\Supplier.cs" />
+    <Compile Include="Master\Users.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\U-Soft.Common\USoft.Common.csproj">
+      <Project>{FDD3F992-B580-41FE-82D0-8062DB25EEC4}</Project>
+      <Name>USoft.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

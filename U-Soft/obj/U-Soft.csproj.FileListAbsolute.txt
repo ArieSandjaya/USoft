@@ -1,0 +1,74 @@
+D:\U-Soft\U-Soft\bin\U-Soft.dll
+D:\U-Soft\U-Soft\bin\U-Soft.pdb
+D:\U-Soft\U-Soft\bin\AjaxControlToolkit.dll
+D:\U-Soft\U-Soft\obj\Debug\ResolveAssemblyReference.cache
+D:\U-Soft\U-Soft\obj\Debug\U-Soft.dll
+D:\U-Soft\U-Soft\obj\Debug\U-Soft.pdb
+D:\U-Soft\U-Soft\bin\USoft.AccordionMenu.dll
+D:\U-Soft\U-Soft\bin\USoft.AccordionMenu.pdb
+D:\U-Soft\U-Soft\bin\UFinance.Common.dll
+D:\U-Soft\U-Soft\bin\UFinance.Common.pdb
+D:\U-Soft\U-Soft\bin\USoft.Insurance.dll
+D:\U-Soft\U-Soft\bin\USoft.Insurance.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\U-Soft.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\U-Soft.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\UFinance.Common.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.AccordionMenu.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.Compliance.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.Globalization.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.Insurance.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.Marketing.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.Reports.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\UFinance.Common.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.Compliance.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.Insurance.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.Globalization.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.Reports.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.AccordionMenu.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\bin\USoft.Marketing.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\obj\Debug\U-Soft.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\U-Soft\obj\Debug\U-Soft.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\U-Soft.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\U-Soft.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\AjaxControlToolkit.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\UFinance.Common.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.AccordionMenu.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.Compliance.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.DataAccess.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.Globalization.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.Insurance.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.Marketing.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.Reports.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\UFinance.Common.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.Reports.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.Compliance.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.Insurance.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.DataAccess.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.Globalization.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.AccordionMenu.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\bin\USoft.Marketing.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\obj\Debug\U-Soft.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\U-Soft\obj\Debug\U-Soft.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\U-Soft.dll
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\U-Soft.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\UFinance.Common.dll
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.AccordionMenu.dll
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.Compliance.dll
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.DataAccess.dll
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.Globalization.dll
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.Insurance.dll
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.Marketing.dll
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.Reports.dll
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\UFinance.Common.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.Reports.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.Compliance.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.Insurance.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.DataAccess.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.Globalization.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.AccordionMenu.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft\bin\USoft.Marketing.pdb
+D:\Soft\U-Soft\U-Soft\U-Soft\obj\Debug\ResolveAssemblyReference.cache
+D:\Soft\U-Soft\U-Soft\U-Soft\obj\Debug\U-Soft.dll
+D:\Soft\U-Soft\U-Soft\U-Soft\obj\Debug\U-Soft.pdb

@@ -1,0 +1,5 @@
+bin\Debug\UFinance.Common.dll
+bin\Debug\UFinance.Common.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\UFinance.Common.dll
+obj\Debug\UFinance.Common.pdb

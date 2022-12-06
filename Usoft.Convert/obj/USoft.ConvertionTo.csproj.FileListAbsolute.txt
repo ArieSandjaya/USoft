@@ -1,0 +1,5 @@
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\Usoft.Convert\bin\Debug\Usoft.Convert.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\Usoft.Convert\bin\Debug\Usoft.Convert.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\Usoft.Convert\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\Usoft.Convert\obj\Debug\Usoft.Convert.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-Soft\Usoft.Convert\obj\Debug\Usoft.Convert.pdb

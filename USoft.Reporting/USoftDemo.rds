@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>USoftDemo</Name>
+  <DataSourceID>b0a9fa30-f793-44d3-a5a7-473170bd2d7d</DataSourceID>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=192.168.1.254;Initial Catalog=USOFT_DEMO</ConnectString>
+  </ConnectionProperties>
+</RptDataSource>

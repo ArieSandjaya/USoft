@@ -1,0 +1,78 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D57ED79-95CD-44FA-9626-795DC8883A19}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>USoft.Compliance</RootNamespace>
+    <AssemblyName>USoft.Compliance</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entertainment\Approval.cs" />
+    <Compile Include="Entertainment\Recap.cs" />
+    <Compile Include="Entertainment\SaveEntertainment.cs" />
+    <Compile Include="Entertainment\SearchHistory.cs" />
+    <Compile Include="Master\AddDept.cs" />
+    <Compile Include="Master\DealerAdd.cs" />
+    <Compile Include="Master\DealerEdit.cs" />
+    <Compile Include="Master\DealerSearch.cs" />
+    <Compile Include="Master\DeptEdit.cs" />
+    <Compile Include="Master\DeptSearch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Master\AddTerorist.cs" />
+    <Compile Include="Teroris\Teroris.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\U-Soft.Common\USoft.Common.csproj">
+      <Project>{FDD3F992-B580-41FE-82D0-8062DB25EEC4}</Project>
+      <Name>USoft.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USoft.Globalization\USoft.Globalization.csproj">
+      <Project>{4AD38A71-91A3-4D38-BB46-B57E0663B60C}</Project>
+      <Name>USoft.Globalization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

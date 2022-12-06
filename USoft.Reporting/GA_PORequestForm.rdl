@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="USoftDemo">
+      <DataSourceReference>USoftDemo</DataSourceReference>
+      <rd:DataSourceID>b0ff0edf-bcd7-408b-b6b2-85461453f0cc</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>1in</BottomMargin>
+  <RightMargin>1in</RightMargin>
+  <ReportParameters>
+    <ReportParameter Name="pivchRequestID">
+      <DataType>String</DataType>
+      <Prompt>pivchRequestID</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:GridSpacing>0.05in</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <Height>4.5in</Height>
+  </Body>
+  <PageHeader>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Left>0.05in</Left>
+        <Top>0.05in</Top>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Width>1in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>No</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>2.35in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageHeader>
+  <rd:ReportID>7149c317-aa1b-4a30-a672-830a5bff5934</rd:ReportID>
+  <LeftMargin>1in</LeftMargin>
+  <DataSets>
+    <DataSet Name="dsHeader">
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>spGAPurchaseRequestView</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@pivchRequestID">
+            <Value>=Parameters!pivchRequestID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <DataSourceName>USoftDemo</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="RequestId">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>RequestId</DataField>
+        </Field>
+        <Field Name="RequestDate">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>RequestDate</DataField>
+        </Field>
+        <Field Name="Type">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Type</DataField>
+        </Field>
+        <Field Name="Reason">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Reason</DataField>
+        </Field>
+        <Field Name="SupplierCode">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SupplierCode</DataField>
+        </Field>
+        <Field Name="SupplierName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SupplierName</DataField>
+        </Field>
+        <Field Name="total">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>total</DataField>
+        </Field>
+        <Field Name="CurrencyCode">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CurrencyCode</DataField>
+        </Field>
+        <Field Name="BranchId">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>BranchId</DataField>
+        </Field>
+        <Field Name="BranchName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BranchName</DataField>
+        </Field>
+        <Field Name="DepartementCode">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DepartementCode</DataField>
+        </Field>
+        <Field Name="DepartementName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DepartementName</DataField>
+        </Field>
+        <Field Name="Description">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Status">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Status</DataField>
+        </Field>
+        <Field Name="ApprovalState">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>ApprovalState</DataField>
+        </Field>
+        <Field Name="CreatedBy">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CreatedBy</DataField>
+        </Field>
+        <Field Name="CreatedName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CreatedName</DataField>
+        </Field>
+        <Field Name="UpdateBy">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UpdateBy</DataField>
+        </Field>
+        <Field Name="UpdateName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UpdateName</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>10.25in</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Language>en-US</Language>
+  <TopMargin>1in</TopMargin>
+</Report>

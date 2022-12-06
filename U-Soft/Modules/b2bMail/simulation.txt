@@ -1,0 +1,159 @@
+<form id="frmSimulation" name="frmSimulation" method="post" action="mysimulation">
+<script type="text/javascript">
+	function CheckKeyCode(e)
+		{
+		if (navigator.appName == "Microsoft Internet Explorer")
+			{if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode == 8))
+				{return true;}
+				else
+				{return false;}
+			}
+			else
+			{if ((e.charCode >= 48 && e.charCode <= 57) || (e.charCode == 0))
+				{return true;}
+				else
+				{return false;}
+			}
+		}
+	function CountDpValue(e)
+		{
+			if(e !="" || parseFloat(e) >0)
+			{
+				var otr
+				var dpValue;
+				otr = parseFloat(document.getElementById('harga').value);
+				if(otr>0)
+					{
+						dpValue = (parseFloat(e)/100) * otr;
+						document.getElementById('dp').value = dpValue;
+					}
+				else
+					{
+						alert("please insert correct OTR Price");
+					}
+			}
+			else
+			{
+				alert("please insert correct Dp Procentage");
+			}
+		}
+	function CountDpPercent(e)
+		{
+			if(e !="" || parseFloat(e) >0)
+			{
+				var otr
+				var dpValue;
+				otr = parseFloat(document.getElementById('harga').value);
+				if(otr>0)
+					{
+						dpValue = otr / parseFloat(e);
+						document.getElementById('dpPercent').value = dpValue;
+					}
+					else
+					{
+						alert("please insert correct OTR Price");
+					}
+			}
+			else
+			{
+				alert("please insert correct Dp Amount");
+			}
+		}
+</script>
+<div class="contentDiv">
+<?php
+error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+$harga=$_GET['harga'];
+$dp=$harga*0.2;
+?>
+<table border="0" style="width: 100%">
+<tr>
+    <table border="0" style="width: 100%">
+                    <tr><td colspan=2><h3 class="subHeader"><?=$this->lang->line('header_simulation');?></h3></td></tr>
+                    <tr>
+                        <td style="width: 20%; vertical-align: top; text-align: left;"><img src='<?php echo base_url()."assets/images/calculate.jpg"?>'/></td>
+                        <td style="width: 40%; vertical-align: top; text-align: justify;">
+							<table>
+								<tr>
+									<td>OTR</td>
+									<td><input name="harga" class="Textpadding" type="text" id="harga" value="<?php echo $harga ; ?>" size="30" onkeypress="return CheckKeyCode(event);"/></td>
+								</tr>
+								<tr>
+									<td>DP (%)</td>
+									<td><input name="dpPercent" class="Textpadding" type="text" id="dpPercent" value="<?php echo $dp; ?>" size="10" onkeypress="return CheckKeyCode(event);" onblur="CountDpValue(this.value);"/></td>
+								</tr>
+								<tr>
+									<td>DP (Rp)</td>
+									<td><input name="dp" class="Textpadding" type="text" id="dp" value="<?php echo $dp; ?>" size="30" onkeypress="return CheckKeyCode(event);"/></td>
+								</tr>
+								<tr>
+									<td>Insurance Type</td>
+									<td>
+									<select name="InsTipe" id="InsTipe" class="Selectpadding">
+									<option value="0">AR</option>
+									<option value="1">TLO</option>
+									</select> </td>
+								</tr>
+								<tr>
+									<td>Lama Kredit </td>
+									<td>
+									<select name="tahun" id="tahun" class="Selectpadding">
+									<option value="0">-- Pilih Tahun --</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									</select> </td>
+								</tr>
+								<tr>
+								<td>&nbsp;</td>
+									<td><input type="submit" name="Kalkulasi" value="Calculate" /></td>
+								</tr>
+							</table>
+						</td>
+						<td><hr size=400 width=1></td>
+						<td style="width: 40%; vertical-align: top; text-align: justify;">
+							<table>
+								<tr>
+									<td>OTR</td>
+									<td><input name="hargaIP" class="Textpadding" type="text" id="hargaIP" value="<?php echo $hargaIP ; ?>" size="30" onkeypress="return CheckKeyCode(event);"/></td>
+								</tr>
+								<tr>
+									<td>Installment Payments</td>
+									<td><input name="IP" class="Textpadding" type="text" id="IP" value="<?php echo $IP ; ?>" size="30" onkeypress="return CheckKeyCode(event);"/></td>
+								</tr>
+								<tr>
+									<td>Insurance Type</td>
+									<td>
+									<select name="InsType" id="InsType" class="Selectpadding">
+									<option value="0">AR</option>
+									<option value="1">TLO</option>
+									</select> </td>
+								</tr>
+								<tr>
+									<td>Lama Kredit </td>
+									<td>
+									<select name="tahunIP" id="tahunIP" class="Selectpadding">
+									<option value="0">-- Pilih Tahun --</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									</select> </td>
+								</tr>
+								<tr>
+								<td>&nbsp;</td>
+									<td><input type="submit" name="KalkulasiIP" value="Calculate" /></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+	</table>
+	</tr>
+	<tr>
+		<p class="desc">* Simulasi kredit dalam website ini berupa estimasi dan dapat berubah sewaktu-waktu tanpa pemberitahuan terlebih dahulu </p>
+	</tr>
+</table>
+</div>
+</form>

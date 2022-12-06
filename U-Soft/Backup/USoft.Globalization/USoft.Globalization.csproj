@@ -1,0 +1,95 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4AD38A71-91A3-4D38-BB46-B57E0663B60C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>USoft.Globalization</RootNamespace>
+    <AssemblyName>USoft.Globalization</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.20229.12049, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AdminFee\AdminFee\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppStart.cs" />
+    <Compile Include="Classes\Branch.cs" />
+    <Compile Include="CekSessions.cs" />
+    <Compile Include="Classes\Brand.cs" />
+    <Compile Include="Classes\ControlBindingHelper.cs" />
+    <Compile Include="Classes\EntertainmentDept.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Classes\EntertainmentDealer.cs" />
+    <Compile Include="EmptyData.cs" />
+    <Compile Include="AppMessage.cs" />
+    <Compile Include="Privilege\PrivCreate.cs" />
+    <Compile Include="Privilege\PrivEdit.cs" />
+    <Compile Include="Privilege\Priviledge.cs" />
+    <Compile Include="Privilege\PrivSearch.cs" />
+    <Compile Include="Privilege\PrivMenu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ReportGroup.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Users\UserId.cs" />
+    <Compile Include="Users\UserCreate.cs" />
+    <Compile Include="Users\UserEdit.cs" />
+    <Compile Include="Users\UserLogon.cs" />
+    <Compile Include="Users\UserMenu.cs" />
+    <Compile Include="Users\UserSearch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\U-Soft.Common\USoft.Common.csproj">
+      <Project>{FDD3F992-B580-41FE-82D0-8062DB25EEC4}</Project>
+      <Name>USoft.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USoft.AccordionMenu\USoft.AccordionMenu.csproj">
+      <Project>{5069B86D-4F02-44FE-830F-25842E36D6D4}</Project>
+      <Name>USoft.AccordionMenu</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lookup.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

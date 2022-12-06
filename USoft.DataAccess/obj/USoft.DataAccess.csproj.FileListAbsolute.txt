@@ -1,0 +1,14 @@
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.DataAccess\bin\Debug\USoft.DataAccess.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.DataAccess\bin\Debug\USoft.DataAccess.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.DataAccess\bin\Debug\UFinance.Common.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.DataAccess\bin\Debug\UFinance.Common.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.DataAccess\obj\Debug\USoft.DataAccess.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.DataAccess\obj\Debug\USoft.DataAccess.pdb
+D:\Soft\U-Soft\U-Soft\USoft.DataAccess\bin\Debug\USoft.DataAccess.dll
+D:\Soft\U-Soft\U-Soft\USoft.DataAccess\bin\Debug\USoft.DataAccess.pdb
+D:\Soft\U-Soft\U-Soft\USoft.DataAccess\bin\Debug\UFinance.Common.dll
+D:\Soft\U-Soft\U-Soft\USoft.DataAccess\bin\Debug\UFinance.Common.pdb
+D:\Soft\U-Soft\U-Soft\USoft.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+D:\Soft\U-Soft\U-Soft\USoft.DataAccess\obj\Debug\USoft.DataAccess.dll
+D:\Soft\U-Soft\U-Soft\USoft.DataAccess\obj\Debug\USoft.DataAccess.pdb

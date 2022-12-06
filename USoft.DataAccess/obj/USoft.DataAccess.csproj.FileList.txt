@@ -1,0 +1,7 @@
+bin\Debug\USoft.DataAccess.dll
+bin\Debug\USoft.DataAccess.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\USoft.DataAccess.dll
+obj\Debug\USoft.DataAccess.pdb
+bin\Debug\UFinance.Common.dll
+bin\Debug\UFinance.Common.pdb

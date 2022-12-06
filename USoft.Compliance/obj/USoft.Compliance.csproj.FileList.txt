@@ -1,0 +1,13 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\USoft.Compliance.dll
+bin\Debug\USoft.Compliance.pdb
+bin\Debug\UFinance.Common.dll
+bin\Debug\USoft.Globalization.dll
+bin\Debug\System.Web.Extensions.dll
+bin\Debug\AjaxControlToolkit.dll
+bin\Debug\USoft.AccordionMenu.dll
+bin\Debug\UFinance.Common.pdb
+bin\Debug\USoft.Globalization.pdb
+bin\Debug\USoft.AccordionMenu.pdb
+obj\Debug\USoft.Compliance.dll
+obj\Debug\USoft.Compliance.pdb

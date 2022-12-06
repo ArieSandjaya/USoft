@@ -1,0 +1,21 @@
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Reports\bin\Debug\USoft.Reports.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Reports\bin\Debug\USoft.Reports.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Reports\bin\Debug\UFinance.Common.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Reports\bin\Debug\UFinance.Common.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Reports\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Reports\obj\Debug\USoft.Reports.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Reports\obj\Debug\USoft.Reports.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Reports\bin\Debug\USoft.Reports.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Reports\bin\Debug\USoft.Reports.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Reports\bin\Debug\UFinance.Common.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Reports\bin\Debug\UFinance.Common.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Reports\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Reports\obj\Debug\USoft.Reports.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Reports\obj\Debug\USoft.Reports.pdb
+D:\Soft\U-Soft\U-Soft\USoft.Reports\bin\Debug\USoft.Reports.dll
+D:\Soft\U-Soft\U-Soft\USoft.Reports\bin\Debug\USoft.Reports.pdb
+D:\Soft\U-Soft\U-Soft\USoft.Reports\bin\Debug\UFinance.Common.dll
+D:\Soft\U-Soft\U-Soft\USoft.Reports\bin\Debug\UFinance.Common.pdb
+D:\Soft\U-Soft\U-Soft\USoft.Reports\obj\Debug\ResolveAssemblyReference.cache
+D:\Soft\U-Soft\U-Soft\USoft.Reports\obj\Debug\USoft.Reports.dll
+D:\Soft\U-Soft\U-Soft\USoft.Reports\obj\Debug\USoft.Reports.pdb

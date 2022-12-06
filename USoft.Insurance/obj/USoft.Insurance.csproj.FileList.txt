@@ -1,0 +1,7 @@
+bin\Debug\USoft.Insurance.dll
+bin\Debug\USoft.Insurance.pdb
+bin\Debug\UFinance.Common.dll
+bin\Debug\UFinance.Common.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\USoft.Insurance.dll
+obj\Debug\USoft.Insurance.pdb

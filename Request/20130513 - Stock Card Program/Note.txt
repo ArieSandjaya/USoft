@@ -1,0 +1,16 @@
+Table
+- MsMenuSearch
+- MsMappingApproval
+- MsDepartement
+
+Field
+- IsActive
+
+Menu
+- Purchase
+	- Purchase Request
+
+- Master**
+	- Privilege**
+		- MappingApproval
+	- Departement

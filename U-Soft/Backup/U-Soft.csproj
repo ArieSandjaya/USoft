@@ -1,0 +1,1327 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{491D32F2-496E-4137-88C5-47664AE72065}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>USoft</RootNamespace>
+    <AssemblyName>U-Soft</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.20229.12049, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\AdminFee\AdminFee\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\ctlAccordionMenu.ascx" />
+    <Content Include="Controls\ctlHtmlAccordionMenu.ascx" />
+    <Content Include="Controls\ctlPageHeader.ascx" />
+    <Content Include="Controls\ctrlBranch.ascx" />
+    <Content Include="Controls\ctrlDateTime.ascx" />
+    <Content Include="Controls\ctrlDatetimeRange.ascx" />
+    <Content Include="Controls\ctrlErrorMessage.ascx" />
+    <Content Include="Controls\ctrlFormHeader.ascx" />
+    <Content Include="Controls\ctrlPager.ascx" />
+    <Content Include="Controls\ctrlPriviledge.ascx" />
+    <Content Include="Controls\ctrlSingleDate.ascx" />
+    <Content Include="Controls\ctrlStatus.ascx" />
+    <Content Include="Controls\ctrlUserId.ascx" />
+    <Content Include="Controls\ctrlValue.ascx" />
+    <Content Include="CSS\black-tie\images\Unchecked.gif" />
+    <Content Include="Modules\Main\EditUsers.aspx" />
+    <Content Include="Modules\Main\Priviledge.aspx" />
+    <Content Include="Modules\Main\PriviledgeEdit.aspx" />
+    <Content Include="Modules\Main\PriviledgeSearch.aspx" />
+    <Content Include="Modules\Main\SearchUsers.aspx" />
+    <Content Include="CSS\black-tie\images\loading6.gif" />
+    <Content Include="CSS\black-tie\images\ui-bg_diagonals-thick_8_333333_40x40.png" />
+    <Content Include="CSS\black-tie\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="CSS\black-tie\images\ui-bg_glass_40_111111_1x400.png" />
+    <Content Include="CSS\black-tie\images\ui-bg_glass_55_1c1c1c_1x400.png" />
+    <Content Include="CSS\black-tie\images\ui-bg_highlight-hard_100_f9f9f9_1x100.png" />
+    <Content Include="CSS\black-tie\images\ui-bg_highlight-hard_40_aaaaaa_1x100.png" />
+    <Content Include="CSS\black-tie\images\ui-bg_highlight-soft_50_aaaaaa_1x100.png" />
+    <Content Include="CSS\black-tie\images\ui-bg_inset-hard_45_cd0a0a_1x100.png" />
+    <Content Include="CSS\black-tie\images\ui-bg_inset-hard_55_ffeb80_1x100.png" />
+    <Content Include="CSS\black-tie\images\ui-icons_222222_256x240.png" />
+    <Content Include="CSS\black-tie\images\ui-icons_4ca300_256x240.png" />
+    <Content Include="CSS\black-tie\images\ui-icons_bbbbbb_256x240.png" />
+    <Content Include="CSS\black-tie\images\ui-icons_ededed_256x240.png" />
+    <Content Include="CSS\black-tie\images\ui-icons_ffcf29_256x240.png" />
+    <Content Include="CSS\black-tie\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="CSS\black-tie\jquery-ui-1.9.2.custom.css" />
+    <Content Include="CSS\black-tie\jquery-ui-1.9.2.custom.min.css" />
+    <Content Include="CSS\black-tie\ui-layout.css" />
+    <Content Include="CSS\login\images\bar.png" />
+    <Content Include="CSS\login\images\buttonbg.png" />
+    <Content Include="CSS\login\images\buttonbgHover.png" />
+    <Content Include="CSS\login\images\darknight_logo.png" />
+    <Content Include="CSS\login\images\exit.png" />
+    <Content Include="CSS\login\images\loginArrow.png" />
+    <Content Include="CSS\login\images\loginbuttonbg.png" />
+    <Content Include="CSS\login\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Javascript\calcSisa.js" />
+    <Content Include="Javascript\CalculateAdm.js" />
+    <Content Include="Javascript\jquery.blockUI.js" />
+    <Content Include="Javascript\jquery.js" />
+    <Content Include="Javascript\jquery.layout-1.2.0.js" />
+    <Content Include="Javascript\jquery.layout.js" />
+    <Content Include="Javascript\jquery.layout.min.js" />
+    <Content Include="Javascript\jquery.ui.all.js" />
+    <Content Include="Javascript\login.js" />
+    <Content Include="Javascript\NumberFormat.js" />
+    <Content Include="Javascript\ScriptSession.js" />
+    <Content Include="LogOn.aspx" />
+    <Content Include="Modules\Compliance\Terorist\teroris.aspx" />
+    <Content Include="Modules\Insurance\Aswata\InsuranceAswata.aspx" />
+    <Content Include="Modules\Insurance\b2bMail\b2bMailRaksa.aspx" />
+    <Content Include="Modules\Insurance\Raksa\InsuranceRaksa.aspx" />
+    <Content Include="Modules\Insurance\Tokio\InsuranceTokio.aspx" />
+    <Content Include="Modules\Insurance\Tokio\PrintPage.aspx" />
+    <Content Include="Modules\Insurance\Tokio\PrintPage2.aspx" />
+    <Content Include="Javascript\jquery-1.8.3.js" />
+    <Content Include="Javascript\jquery-ui-1.9.2.custom.js" />
+    <Content Include="Javascript\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="Main.aspx" />
+    <Content Include="Modules\Main\ChangePassword.aspx" />
+    <Content Include="Modules\Main\Users.aspx" />
+    <Content Include="Modules\Marketing\AdminFee\AdmSearchContract.aspx" />
+    <Content Include="Modules\Marketing\AdminFee\AdmSearchContractEdit.aspx" />
+    <Content Include="MyServices.asmx" />
+    <Content Include="Reports\ReportCaller.aspx" />
+    <Content Include="Reports\ReportList.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\BasePageSearch.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\LookupPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\PageManager.cs" />
+    <Compile Include="Classes\SearchHelper.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cls\clsSetting.cs" />
+    <Compile Include="Controls\ctlAccordionMenu.ascx.cs">
+      <DependentUpon>ctlAccordionMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctlAccordionMenu.ascx.designer.cs">
+      <DependentUpon>ctlAccordionMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctlHtmlAccordionMenu.ascx.cs">
+      <DependentUpon>ctlHtmlAccordionMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctlHtmlAccordionMenu.ascx.designer.cs">
+      <DependentUpon>ctlHtmlAccordionMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctlPageHeader.ascx.cs">
+      <DependentUpon>ctlPageHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctlPageHeader.ascx.designer.cs">
+      <DependentUpon>ctlPageHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlArea.ascx.cs">
+      <DependentUpon>ctrlArea.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlArea.ascx.designer.cs">
+      <DependentUpon>ctrlArea.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlBranch.ascx.cs">
+      <DependentUpon>ctrlBranch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlBranch.ascx.designer.cs">
+      <DependentUpon>ctrlBranch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlCashRewardRecipient.ascx.cs">
+      <DependentUpon>ctrlCashRewardRecipient.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlCashRewardRecipient.ascx.designer.cs">
+      <DependentUpon>ctrlCashRewardRecipient.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlDateTime.ascx.cs">
+      <DependentUpon>ctrlDateTime.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlDateTime.ascx.designer.cs">
+      <DependentUpon>ctrlDateTime.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlDatetimeRange.ascx.cs">
+      <DependentUpon>ctrlDatetimeRange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlDatetimeRange.ascx.designer.cs">
+      <DependentUpon>ctrlDatetimeRange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlErrorMessage.ascx.cs">
+      <DependentUpon>ctrlErrorMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlErrorMessage.ascx.designer.cs">
+      <DependentUpon>ctrlErrorMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlFormHeader.ascx.cs">
+      <DependentUpon>ctrlFormHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlFormHeader.ascx.designer.cs">
+      <DependentUpon>ctrlFormHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlGridPager.ascx.cs">
+      <DependentUpon>ctrlGridPager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlGridPager.ascx.designer.cs">
+      <DependentUpon>ctrlGridPager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlIsActive.ascx.cs">
+      <DependentUpon>ctrlIsActive.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlIsActive.ascx.designer.cs">
+      <DependentUpon>ctrlIsActive.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlNumeric.ascx.cs">
+      <DependentUpon>ctrlNumeric.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlNumeric.ascx.designer.cs">
+      <DependentUpon>ctrlNumeric.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlPager.ascx.cs">
+      <DependentUpon>ctrlPager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlPager.ascx.designer.cs">
+      <DependentUpon>ctrlPager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlPriviledge.ascx.cs">
+      <DependentUpon>ctrlPriviledge.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlPriviledge.ascx.designer.cs">
+      <DependentUpon>ctrlPriviledge.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlSearch.ascx.cs">
+      <DependentUpon>ctrlSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlSearch.ascx.designer.cs">
+      <DependentUpon>ctrlSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlSingleDate.ascx.cs">
+      <DependentUpon>ctrlSingleDate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlSingleDate.ascx.designer.cs">
+      <DependentUpon>ctrlSingleDate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlStatus.ascx.cs">
+      <DependentUpon>ctrlStatus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlStatus.ascx.designer.cs">
+      <DependentUpon>ctrlStatus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlTenor.ascx.cs">
+      <DependentUpon>ctrlTenor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlTenor.ascx.designer.cs">
+      <DependentUpon>ctrlTenor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlTotalReq.ascx.cs">
+      <DependentUpon>ctrlTotalReq.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlTotalReq.ascx.designer.cs">
+      <DependentUpon>ctrlTotalReq.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlUserId.ascx.cs">
+      <DependentUpon>ctrlUserId.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlUserId.ascx.designer.cs">
+      <DependentUpon>ctrlUserId.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlValue.ascx.cs">
+      <DependentUpon>ctrlValue.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlValue.ascx.designer.cs">
+      <DependentUpon>ctrlValue.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Entertainment\EntApproval.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EntApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Entertainment\EntApproval.aspx.designer.cs">
+      <DependentUpon>EntApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Entertainment\EntEditPage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EntEditPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Entertainment\EntEditPage.aspx.designer.cs">
+      <DependentUpon>EntEditPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Entertainment\EntHistoryPage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EntHistoryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Entertainment\EntHistoryPage.aspx.designer.cs">
+      <DependentUpon>EntHistoryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Entertainment\EntPage.aspx.cs">
+      <DependentUpon>EntPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Compliance\Entertainment\EntPage.aspx.designer.cs">
+      <DependentUpon>EntPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Entertainment\EntPrint.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EntPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Entertainment\EntPrint.aspx.designer.cs">
+      <DependentUpon>EntPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\AddDealer.aspx.cs">
+      <DependentUpon>AddDealer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\AddDealer.aspx.designer.cs">
+      <DependentUpon>AddDealer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\AddDepartment.aspx.cs">
+      <DependentUpon>AddDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\AddDepartment.aspx.designer.cs">
+      <DependentUpon>AddDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\dealer.aspx.cs">
+      <DependentUpon>dealer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\dealer.aspx.designer.cs">
+      <DependentUpon>dealer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\department.aspx.cs">
+      <DependentUpon>department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\department.aspx.designer.cs">
+      <DependentUpon>department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\EditDealer.aspx.cs">
+      <DependentUpon>EditDealer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\EditDealer.aspx.designer.cs">
+      <DependentUpon>EditDealer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\EditDepartment.aspx.cs">
+      <DependentUpon>EditDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Compliance\Master\EditDepartment.aspx.designer.cs">
+      <DependentUpon>EditDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Terorist\HighRiskCountry.aspx.cs">
+      <DependentUpon>HighRiskCountry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Compliance\Terorist\HighRiskCountry.aspx.designer.cs">
+      <DependentUpon>HighRiskCountry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Terorist\TerorisAdd.aspx.cs">
+      <DependentUpon>TerorisAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Compliance\Terorist\TerorisAdd.aspx.designer.cs">
+      <DependentUpon>TerorisAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Approval\PurchaseRequestApproval.aspx.cs">
+      <DependentUpon>PurchaseRequestApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Approval\PurchaseRequestApproval.aspx.designer.cs">
+      <DependentUpon>PurchaseRequestApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Item.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Item.aspx.designer.cs">
+      <DependentUpon>Item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseOrderAddEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PurchaseOrderAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseOrderAddEdit.aspx.designer.cs">
+      <DependentUpon>PurchaseOrderAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseOrderDetail.aspx.cs">
+      <DependentUpon>PurchaseOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseOrderDetail.aspx.designer.cs">
+      <DependentUpon>PurchaseOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseOrderDetailAddEdit.aspx.cs">
+      <DependentUpon>PurchaseOrderDetailAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseOrderDetailAddEdit.aspx.designer.cs">
+      <DependentUpon>PurchaseOrderDetailAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseReceived.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PurchaseReceived.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseReceived.aspx.designer.cs">
+      <DependentUpon>PurchaseReceived.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseReceivedAddEdit.aspx.cs">
+      <DependentUpon>PurchaseReceivedAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseReceivedAddEdit.aspx.designer.cs">
+      <DependentUpon>PurchaseReceivedAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseReceivedDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PurchaseReceivedDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseReceivedDetail.aspx.designer.cs">
+      <DependentUpon>PurchaseReceivedDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseReceivedDetailAddEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PurchaseReceivedDetailAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseReceivedDetailAddEdit.aspx.designer.cs">
+      <DependentUpon>PurchaseReceivedDetailAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\CashReward\CashRewardPerAppl.aspx.cs">
+      <DependentUpon>CashRewardPerAppl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Marketing\CashReward\CashRewardPerAppl.aspx.designer.cs">
+      <DependentUpon>CashRewardPerAppl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\CashReward\CashRewardPerApplDetail.aspx.cs">
+      <DependentUpon>CashRewardPerApplDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Marketing\CashReward\CashRewardPerApplDetail.aspx.designer.cs">
+      <DependentUpon>CashRewardPerApplDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\Currency.aspx.cs">
+      <DependentUpon>Currency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\Currency.aspx.designer.cs">
+      <DependentUpon>Currency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\CurrencyAddEdit.aspx.cs">
+      <DependentUpon>CurrencyAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\CurrencyAddEdit.aspx.designer.cs">
+      <DependentUpon>CurrencyAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemCategory.aspx.cs">
+      <DependentUpon>ItemCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemCategory.aspx.designer.cs">
+      <DependentUpon>ItemCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemCategoryAddEdit.aspx.cs">
+      <DependentUpon>ItemCategoryAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemCategoryAddEdit.aspx.designer.cs">
+      <DependentUpon>ItemCategoryAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemGroup.aspx.cs">
+      <DependentUpon>ItemGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemGroup.aspx.designer.cs">
+      <DependentUpon>ItemGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemGroupAddEdit.aspx.cs">
+      <DependentUpon>ItemGroupAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemGroupAddEdit.aspx.designer.cs">
+      <DependentUpon>ItemGroupAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemType.aspx.cs">
+      <DependentUpon>ItemType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemType.aspx.designer.cs">
+      <DependentUpon>ItemType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemTypeAddEdit.aspx.cs">
+      <DependentUpon>ItemTypeAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\ItemTypeAddEdit.aspx.designer.cs">
+      <DependentUpon>ItemTypeAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\Measurement.aspx.cs">
+      <DependentUpon>Measurement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\Measurement.aspx.designer.cs">
+      <DependentUpon>Measurement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\MeasurementAddEdit.aspx.cs">
+      <DependentUpon>MeasurementAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\MeasurementAddEdit.aspx.designer.cs">
+      <DependentUpon>MeasurementAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\Supplier.aspx.cs">
+      <DependentUpon>Supplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\Supplier.aspx.designer.cs">
+      <DependentUpon>Supplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\SupplierAddEdit.aspx.cs">
+      <DependentUpon>SupplierAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Master\SupplierAddEdit.aspx.designer.cs">
+      <DependentUpon>SupplierAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseOrder.aspx.cs">
+      <DependentUpon>PurchaseOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseOrder.aspx.designer.cs">
+      <DependentUpon>PurchaseOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseRequest.aspx.cs">
+      <DependentUpon>PurchaseRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseRequest.aspx.designer.cs">
+      <DependentUpon>PurchaseRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseRequestAddEdit.aspx.cs">
+      <DependentUpon>PurchaseRequestAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseRequestAddEdit.aspx.designer.cs">
+      <DependentUpon>PurchaseRequestAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseRequestDetail.aspx.cs">
+      <DependentUpon>PurchaseRequestDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseRequestDetail.aspx.designer.cs">
+      <DependentUpon>PurchaseRequestDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseRequestDetailAddEdit.aspx.cs">
+      <DependentUpon>PurchaseRequestDetailAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GeneralAffair\Purchase\PurchaseRequestDetailAddEdit.aspx.designer.cs">
+      <DependentUpon>PurchaseRequestDetailAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HomePage\ManualBook.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ManualBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HomePage\ManualBook.aspx.designer.cs">
+      <DependentUpon>ManualBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\ActivityTask.aspx.cs">
+      <DependentUpon>ActivityTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\ActivityTask.aspx.designer.cs">
+      <DependentUpon>ActivityTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\ActivityTaskAddEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ActivityTaskAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\ActivityTaskAddEdit.aspx.designer.cs">
+      <DependentUpon>ActivityTaskAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\ActivityTaskDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ActivityTaskDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\ActivityTaskDetail.aspx.designer.cs">
+      <DependentUpon>ActivityTaskDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\DomainUsers.aspx.cs">
+      <DependentUpon>DomainUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\DomainUsers.aspx.designer.cs">
+      <DependentUpon>DomainUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\DomainUsersAddEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DomainUsersAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\DomainUsersAddEdit.aspx.designer.cs">
+      <DependentUpon>DomainUsersAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemDetail.aspx.cs">
+      <DependentUpon>ItemDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemDetail.aspx.designer.cs">
+      <DependentUpon>ItemDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemEdit.aspx.cs">
+      <DependentUpon>ItemEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemEdit.aspx.designer.cs">
+      <DependentUpon>ItemEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemList.aspx.cs">
+      <DependentUpon>ItemList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemList.aspx.designer.cs">
+      <DependentUpon>ItemList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemOut.aspx.cs">
+      <DependentUpon>ItemOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemOut.aspx.designer.cs">
+      <DependentUpon>ItemOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemOutAddEdit.aspx.cs">
+      <DependentUpon>ItemOutAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemOutAddEdit.aspx.designer.cs">
+      <DependentUpon>ItemOutAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemTrans.aspx.cs">
+      <DependentUpon>ItemTrans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemTrans.aspx.designer.cs">
+      <DependentUpon>ItemTrans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemTransAddEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ItemTransAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemTransAddEdit.aspx.designer.cs">
+      <DependentUpon>ItemTransAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemTransDetail.aspx.cs">
+      <DependentUpon>ItemTransDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemTransDetail.aspx.designer.cs">
+      <DependentUpon>ItemTransDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemTransDetailAddEdit.aspx.cs">
+      <DependentUpon>ItemTransDetailAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemTransDetailAddEdit.aspx.designer.cs">
+      <DependentUpon>ItemTransDetailAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\ItemType.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ItemType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\ItemType.aspx.designer.cs">
+      <DependentUpon>ItemType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\ItemTypeAddEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ItemTypeAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\ItemTypeAddEdit.aspx.designer.cs">
+      <DependentUpon>ItemTypeAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\ProblemType.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ProblemType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\ProblemType.aspx.designer.cs">
+      <DependentUpon>ProblemType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\ProblemTypeAddEdit.aspx.cs">
+      <DependentUpon>ProblemTypeAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\Master\ProblemTypeAddEdit.aspx.designer.cs">
+      <DependentUpon>ProblemTypeAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\ScheduleTask.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ScheduleTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\ScheduleTask.aspx.designer.cs">
+      <DependentUpon>ScheduleTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\ScheduleTaskAddEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ScheduleTaskAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\ScheduleTaskAddEdit.aspx.designer.cs">
+      <DependentUpon>ScheduleTaskAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemIn.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ItemIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemIn.aspx.designer.cs">
+      <DependentUpon>ItemIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemInAddEdit.aspx.cs">
+      <DependentUpon>ItemInAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemInAddEdit.aspx.designer.cs">
+      <DependentUpon>ItemInAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemInDetail.aspx.cs">
+      <DependentUpon>ItemInDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemInDetail.aspx.designer.cs">
+      <DependentUpon>ItemInDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemInDetailAddEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ItemInDetailAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Item\ItemInDetailAddEdit.aspx.designer.cs">
+      <DependentUpon>ItemInDetailAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Main\EditUsers.aspx.cs">
+      <DependentUpon>EditUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Main\EditUsers.aspx.designer.cs">
+      <DependentUpon>EditUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Main\Priviledge.aspx.cs">
+      <DependentUpon>Priviledge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Main\Priviledge.aspx.designer.cs">
+      <DependentUpon>Priviledge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Main\PriviledgeEdit.aspx.cs">
+      <DependentUpon>PriviledgeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Main\PriviledgeEdit.aspx.designer.cs">
+      <DependentUpon>PriviledgeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Main\PriviledgeSearch.aspx.cs">
+      <DependentUpon>PriviledgeSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Main\PriviledgeSearch.aspx.designer.cs">
+      <DependentUpon>PriviledgeSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Main\SearchUserMenu.aspx.cs">
+      <DependentUpon>SearchUserMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Main\SearchUserMenu.aspx.designer.cs">
+      <DependentUpon>SearchUserMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Main\SearchUsers.aspx.cs">
+      <DependentUpon>SearchUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Main\SearchUsers.aspx.designer.cs">
+      <DependentUpon>SearchUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LogOn.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>LogOn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOn.aspx.designer.cs">
+      <DependentUpon>LogOn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Terorist\teroris.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>teroris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compliance\Terorist\teroris.aspx.designer.cs">
+      <DependentUpon>teroris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Insurance\Aswata\InsuranceAswata.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>InsuranceAswata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Insurance\Aswata\InsuranceAswata.aspx.designer.cs">
+      <DependentUpon>InsuranceAswata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Insurance\b2bMail\b2bMailRaksa.aspx.cs">
+      <DependentUpon>b2bMailRaksa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Insurance\b2bMail\b2bMailRaksa.aspx.designer.cs">
+      <DependentUpon>b2bMailRaksa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Insurance\Raksa\InsuranceRaksa.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>InsuranceRaksa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Insurance\Raksa\InsuranceRaksa.aspx.designer.cs">
+      <DependentUpon>InsuranceRaksa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Insurance\Tokio\InsuranceTokio.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>InsuranceTokio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Insurance\Tokio\InsuranceTokio.aspx.designer.cs">
+      <DependentUpon>InsuranceTokio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Insurance\Tokio\PrintPage.aspx.cs">
+      <DependentUpon>PrintPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Insurance\Tokio\PrintPage.aspx.designer.cs">
+      <DependentUpon>PrintPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Insurance\Tokio\PrintPage2.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PrintPage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Insurance\Tokio\PrintPage2.aspx.designer.cs">
+      <DependentUpon>PrintPage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Main\ChangePassword.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Main\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Main\Users.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Main\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\AdminFee\AdmSearchContract.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AdmSearchContract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\AdminFee\AdmSearchContract.aspx.designer.cs">
+      <DependentUpon>AdmSearchContract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\AdminFee\AdmSearchContractEdit.aspx.cs">
+      <DependentUpon>AdmSearchContractEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Marketing\AdminFee\AdmSearchContractEdit.aspx.designer.cs">
+      <DependentUpon>AdmSearchContractEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\CashReward\CashReward.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CashReward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\CashReward\CashReward.aspx.designer.cs">
+      <DependentUpon>CashReward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\CashReward\CashRewardPaid.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CashRewardPaid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\CashReward\CashRewardPaid.aspx.designer.cs">
+      <DependentUpon>CashRewardPaid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\CashReward\CashRewardPaidLater.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CashRewardPaidLater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\CashReward\CashRewardPaidLater.aspx.designer.cs">
+      <DependentUpon>CashRewardPaidLater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\CashReward\UpdateCachReward.asmx.cs">
+      <DependentUpon>UpdateCachReward.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Marketing\Master\CashReward_Dealer.aspx.cs">
+      <DependentUpon>CashReward_Dealer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Marketing\Master\CashReward_Dealer.aspx.designer.cs">
+      <DependentUpon>CashReward_Dealer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\Master\CashReward_Pricing.aspx.cs">
+      <DependentUpon>CashReward_Pricing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Marketing\Master\CashReward_Pricing.aspx.designer.cs">
+      <DependentUpon>CashReward_Pricing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\WorkFlow\WorkFlow.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>WorkFlow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Marketing\WorkFlow\WorkFlow.aspx.designer.cs">
+      <DependentUpon>WorkFlow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\BankGroup.aspx.cs">
+      <DependentUpon>BankGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\BankGroup.aspx.designer.cs">
+      <DependentUpon>BankGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\BankGroupAddEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>BankGroupAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\BankGroupAddEdit.aspx.designer.cs">
+      <DependentUpon>BankGroupAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\Branch.aspx.cs">
+      <DependentUpon>Branch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\Branch.aspx.designer.cs">
+      <DependentUpon>Branch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\BranchAddEdit.aspx.cs">
+      <DependentUpon>BranchAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\BranchAddEdit.aspx.designer.cs">
+      <DependentUpon>BranchAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\Condition.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Condition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\Condition.aspx.designer.cs">
+      <DependentUpon>Condition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\ConditionAddEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ConditionAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\ConditionAddEdit.aspx.designer.cs">
+      <DependentUpon>ConditionAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\Departement.aspx.cs">
+      <DependentUpon>Departement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\Departement.aspx.designer.cs">
+      <DependentUpon>Departement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\DepartementAddEdit.aspx.cs">
+      <DependentUpon>DepartementAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\DepartementAddEdit.aspx.designer.cs">
+      <DependentUpon>DepartementAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\MappingApproval.aspx.cs">
+      <DependentUpon>MappingApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\MappingApproval.aspx.designer.cs">
+      <DependentUpon>MappingApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\MappingApprovalAddEdit.aspx.cs">
+      <DependentUpon>MappingApprovalAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\MappingApprovalAddEdit.aspx.designer.cs">
+      <DependentUpon>MappingApprovalAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\Privilege.aspx.cs">
+      <DependentUpon>Privilege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\Privilege.aspx.designer.cs">
+      <DependentUpon>Privilege.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\PrivilegeAddEdit.aspx.cs">
+      <DependentUpon>PrivilegeAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\PrivilegeAddEdit.aspx.designer.cs">
+      <DependentUpon>PrivilegeAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\Supplier.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Supplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\Supplier.aspx.designer.cs">
+      <DependentUpon>Supplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\SupplierAddEdit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SupplierAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\IT\Master\SupplierAddEdit.aspx.designer.cs">
+      <DependentUpon>SupplierAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Master\UsersAddEdit.aspx.cs">
+      <DependentUpon>UsersAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Master\UsersAddEdit.aspx.designer.cs">
+      <DependentUpon>UsersAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PageBase.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PageBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PageBase.aspx.designer.cs">
+      <DependentUpon>PageBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyServices.asmx.cs">
+      <DependentUpon>MyServices.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Popup\CashRewardRecipients.aspx.cs">
+      <DependentUpon>CashRewardRecipients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup\CashRewardRecipients.aspx.designer.cs">
+      <DependentUpon>CashRewardRecipients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportCaller.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ReportCaller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportCaller.aspx.designer.cs">
+      <DependentUpon>ReportCaller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ReportList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportList.aspx.designer.cs">
+      <DependentUpon>ReportList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\U-Soft.Common\USoft.Common.csproj">
+      <Project>{FDD3F992-B580-41FE-82D0-8062DB25EEC4}</Project>
+      <Name>USoft.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USoft.AccordionMenu\USoft.AccordionMenu.csproj">
+      <Project>{5069B86D-4F02-44FE-830F-25842E36D6D4}</Project>
+      <Name>USoft.AccordionMenu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USoft.Compliance\USoft.Compliance.csproj">
+      <Project>{7D57ED79-95CD-44FA-9626-795DC8883A19}</Project>
+      <Name>USoft.Compliance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USoft.DataAccess\USoft.DataAccess.csproj">
+      <Project>{0D5F265A-845A-4DD8-A5DF-1FCFC530431F}</Project>
+      <Name>USoft.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USoft.Globalization\USoft.Globalization.csproj">
+      <Project>{4AD38A71-91A3-4D38-BB46-B57E0663B60C}</Project>
+      <Name>USoft.Globalization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USoft.Insurance\USoft.Insurance.csproj">
+      <Project>{261FB5E5-246E-4C0A-9B29-413FEEB8014F}</Project>
+      <Name>USoft.Insurance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USoft.Marketing\USoft.Marketing.csproj">
+      <Project>{F93CD851-C1E6-42FB-AA9A-1BDA482FAB57}</Project>
+      <Name>USoft.Marketing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USoft.Reports\USoft.Reports.csproj">
+      <Project>{1020E93A-8A64-4ACA-BB7E-1F43161B6CD7}</Project>
+      <Name>USoft.Reports</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CSS\homepage\images\Thumbs.db" />
+    <None Include="CSS\login\images\Thumbs.db" />
+    <Content Include="Controls\ctrlArea.ascx" />
+    <Content Include="Controls\ctrlCashRewardRecipient.ascx" />
+    <Content Include="Controls\ctrlGridPager.ascx" />
+    <Content Include="Controls\ctrlIsActive.ascx" />
+    <Content Include="Controls\ctrlNumeric.ascx" />
+    <Content Include="Controls\ctrlSearch.ascx" />
+    <Content Include="Controls\ctrlTenor.ascx" />
+    <Content Include="Controls\ctrlTotalReq.ascx" />
+    <Content Include="CSS\black-tie\validationEngine.jquery.css" />
+    <Content Include="CSS\homepage\images\bg-bubplastic-button.gif" />
+    <Content Include="CSS\homepage\images\bg-bubplastic-h-orange.gif" />
+    <Content Include="CSS\homepage\images\bg-bubplastic.gif" />
+    <Content Include="CSS\homepage\styles.css" />
+    <Content Include="CSS\login\images\footer.jpg" />
+    <Content Include="CSS\login\images\HO.jpg" />
+    <Content Include="CSS\login\images\logo.png" />
+    <Content Include="Images\BtnAdd.png" />
+    <Content Include="Images\BtnAddDetail.png" />
+    <Content Include="Images\BtnApprove.png" />
+    <Content Include="Images\BtnBack.png" />
+    <Content Include="Images\BtnCancel.png" />
+    <Content Include="Images\BtnCheck.png" />
+    <Content Include="Images\BtnCreate.png" />
+    <Content Include="Images\BtnDelete.png" />
+    <Content Include="Images\BtnDeleteAll.png" />
+    <Content Include="Images\BtnDeleteDetail.png" />
+    <Content Include="Images\BtnEdit.png" />
+    <Content Include="Images\BtnEditHeader.png" />
+    <Content Include="Images\BtnPageLast.png" />
+    <Content Include="Images\BtnPageNext.png" />
+    <Content Include="Images\BtnPageFirst.png" />
+    <Content Include="Images\BtnPageGo.png" />
+    <Content Include="Images\BtnPagePrev.png" />
+    <Content Include="Images\BtnProcess.png" />
+    <Content Include="Images\BtnReject.png" />
+    <Content Include="Images\BtnReOpen.png" />
+    <Content Include="Images\BtnRFA.png" />
+    <Content Include="Images\BtnSave.png" />
+    <Content Include="Images\BtnSaveAll.png" />
+    <Content Include="Images\BtnSearch.png" />
+    <Content Include="Images\BtnSend.png" />
+    <Content Include="Images\BtnUpdate.png" />
+    <Content Include="Images\BtnVerify.png" />
+    <Content Include="Javascript\date.js" />
+    <Content Include="Javascript\general.js" />
+    <Content Include="Javascript\jquery.formatCurrency-1.4.0.min.js" />
+    <Content Include="Javascript\jquery.maskedinput-1.3.min.js" />
+    <Content Include="Javascript\jquery.validationEngine-en.js" />
+    <Content Include="Javascript\jquery.validationEngine.js" />
+    <Content Include="Lookup.config" />
+    <Content Include="Modules\Compliance\Entertainment\EntApproval.aspx" />
+    <Content Include="Modules\Compliance\Entertainment\EntEditPage.aspx" />
+    <Content Include="Modules\Compliance\Entertainment\EntHistoryPage.aspx" />
+    <Content Include="Modules\Compliance\Entertainment\EntPage.aspx" />
+    <Content Include="Modules\Compliance\Entertainment\EntPrint.aspx" />
+    <Content Include="Modules\Compliance\Master\AddDealer.aspx" />
+    <Content Include="Modules\Compliance\Master\AddDepartment.aspx" />
+    <Content Include="Modules\Compliance\Master\dealer.aspx" />
+    <Content Include="Modules\Compliance\Master\department.aspx" />
+    <Content Include="Modules\Compliance\Master\EditDealer.aspx" />
+    <Content Include="Modules\Compliance\Master\EditDepartment.aspx" />
+    <Content Include="Modules\Compliance\Terorist\HighRiskCountry.aspx" />
+    <Content Include="Modules\Compliance\Terorist\TerorisAdd.aspx" />
+    <Content Include="Modules\GeneralAffair\Approval\PurchaseRequestApproval.aspx" />
+    <Content Include="Modules\GeneralAffair\Item.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseOrderAddEdit.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseOrderDetail.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseOrderDetailAddEdit.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseReceived.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseReceivedAddEdit.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseReceivedDetail.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseReceivedDetailAddEdit.aspx" />
+    <Content Include="Modules\Marketing\CashReward\CashRewardPerAppl.aspx" />
+    <Content Include="Modules\Marketing\CashReward\CashRewardPerApplDetail.aspx" />
+    <Content Include="Modules\Master\Currency.aspx" />
+    <Content Include="Modules\Master\CurrencyAddEdit.aspx" />
+    <Content Include="Modules\GeneralAffair\Master\ItemCategory.aspx" />
+    <Content Include="Modules\GeneralAffair\Master\ItemCategoryAddEdit.aspx" />
+    <Content Include="Modules\GeneralAffair\Master\ItemGroup.aspx" />
+    <Content Include="Modules\GeneralAffair\Master\ItemGroupAddEdit.aspx" />
+    <Content Include="Modules\GeneralAffair\Master\ItemType.aspx" />
+    <Content Include="Modules\GeneralAffair\Master\ItemTypeAddEdit.aspx" />
+    <Content Include="Modules\Master\Measurement.aspx" />
+    <Content Include="Modules\Master\MeasurementAddEdit.aspx" />
+    <Content Include="Modules\GeneralAffair\Master\Supplier.aspx" />
+    <Content Include="Modules\GeneralAffair\Master\SupplierAddEdit.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseOrder.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseRequest.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseRequestAddEdit.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseRequestDetail.aspx" />
+    <Content Include="Modules\GeneralAffair\Purchase\PurchaseRequestDetailAddEdit.aspx" />
+    <Content Include="Modules\HomePage\home.html" />
+    <Content Include="Modules\HomePage\ManualBook.aspx" />
+    <Content Include="Modules\IT\ActivityTask.aspx" />
+    <Content Include="Modules\IT\ActivityTaskAddEdit.aspx" />
+    <Content Include="Modules\IT\ActivityTaskDetail.aspx" />
+    <Content Include="Modules\IT\DomainUsers.aspx" />
+    <Content Include="Modules\IT\DomainUsersAddEdit.aspx" />
+    <Content Include="Modules\IT\Item\ItemDetail.aspx" />
+    <Content Include="Modules\IT\Item\ItemEdit.aspx" />
+    <Content Include="Modules\IT\Item\ItemList.aspx" />
+    <Content Include="Modules\IT\Item\ItemOut.aspx" />
+    <Content Include="Modules\IT\Item\ItemOutAddEdit.aspx" />
+    <Content Include="Modules\IT\Item\ItemTrans.aspx" />
+    <Content Include="Modules\IT\Item\ItemTransAddEdit.aspx" />
+    <Content Include="Modules\IT\Item\ItemTransDetail.aspx" />
+    <Content Include="Modules\IT\Item\ItemTransDetailAddEdit.aspx" />
+    <Content Include="Modules\IT\Master\ItemType.aspx" />
+    <Content Include="Modules\IT\Master\ItemTypeAddEdit.aspx" />
+    <Content Include="Modules\IT\Master\ProblemType.aspx" />
+    <Content Include="Modules\IT\Master\ProblemTypeAddEdit.aspx" />
+    <Content Include="Modules\IT\ScheduleTask.aspx" />
+    <Content Include="Modules\IT\ScheduleTaskAddEdit.aspx" />
+    <Content Include="Modules\IT\Item\ItemIn.aspx" />
+    <Content Include="Modules\IT\Item\ItemInAddEdit.aspx" />
+    <Content Include="Modules\IT\Item\ItemInDetail.aspx" />
+    <Content Include="Modules\IT\Item\ItemInDetailAddEdit.aspx" />
+    <Content Include="Modules\Main\SearchUserMenu.aspx" />
+    <Content Include="Modules\Marketing\CashReward\CashReward.aspx" />
+    <Content Include="Modules\Marketing\CashReward\CashRewardPaid.aspx" />
+    <Content Include="Modules\Marketing\CashReward\CashRewardPaidLater.aspx" />
+    <Content Include="Modules\Marketing\CashReward\UpdateCachReward.asmx" />
+    <Content Include="Modules\Marketing\Master\CashReward_Dealer.aspx" />
+    <Content Include="Modules\Marketing\Master\CashReward_Pricing.aspx" />
+    <Content Include="Modules\Marketing\WorkFlow\WorkFlow.aspx" />
+    <Content Include="Modules\Master\BankGroup.aspx" />
+    <Content Include="Modules\Master\BankGroupAddEdit.aspx" />
+    <Content Include="Modules\Master\Branch.aspx" />
+    <Content Include="Modules\Master\BranchAddEdit.aspx" />
+    <Content Include="Modules\IT\Master\Condition.aspx" />
+    <Content Include="Modules\IT\Master\ConditionAddEdit.aspx" />
+    <Content Include="Modules\Master\Departement.aspx" />
+    <Content Include="Modules\Master\DepartementAddEdit.aspx" />
+    <Content Include="Modules\Master\MappingApproval.aspx" />
+    <Content Include="Modules\Master\MappingApprovalAddEdit.aspx" />
+    <Content Include="Modules\Master\Privilege.aspx" />
+    <Content Include="Modules\Master\PrivilegeAddEdit.aspx" />
+    <Content Include="Modules\IT\Master\Supplier.aspx" />
+    <Content Include="Modules\IT\Master\SupplierAddEdit.aspx" />
+    <Content Include="Modules\Master\Users.aspx" />
+    <Content Include="Modules\Master\UsersAddEdit.aspx" />
+    <Content Include="Modules\PageBase.aspx" />
+    <Content Include="Popup\CashRewardRecipients.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\Compliance\Data\" />
+    <Folder Include="Modules\Insurance\Aswata\Data\" />
+    <Folder Include="Modules\Insurance\Raksa\Data\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Reports\GeneralAffair\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1482</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/U-Soft</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost/U-Soft</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

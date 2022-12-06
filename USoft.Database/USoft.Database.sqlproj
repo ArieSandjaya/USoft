@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+   <UpgradedFromDBP>True</UpgradedFromDBP>
+    <Name>dbpProjectName</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{97d0ee73-4e72-4be8-84b0-8eb588f468ed}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath></RootPath>
+   <UpgradedFromDBP>True</UpgradedFromDBP>
+    <RootNamespace>dbpProjectName</RootNamespace>
+   <PostUpgradeAddToSCC>;E:\TOOLS\OLD USOFT\U-Soft\USoft.Database\USoft.Database.sqlproj;E:\TOOLS\OLD USOFT\U-Soft\USoft.Database\Connections.txt</PostUpgradeAddToSCC>
+   <UpgradedFromDBP>True</UpgradedFromDBP>
+    <AssemblyName>dbpProjectName</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>  
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Function" />
+    <Folder Include="Function\Auto Number" />
+    <Folder Include="Store Procedure" />
+    <Folder Include="Store Procedure\General" />
+    <Folder Include="Store Procedure\General Affair" />
+    <Folder Include="Store Procedure\General Affair\Item" />
+    <Folder Include="Store Procedure\General Affair\Master" />
+    <Folder Include="Store Procedure\General Affair\Master\Item Category" />
+    <Folder Include="Store Procedure\General Affair\Master\Item Group" />
+    <Folder Include="Store Procedure\General Affair\Master\Item Type" />
+    <Folder Include="Store Procedure\General Affair\Master\Supplier" />
+    <Folder Include="Store Procedure\General Affair\Purchase" />
+    <Folder Include="Store Procedure\Insurance" />
+    <Folder Include="Store Procedure\Insurance\B2BMail" />
+    <Folder Include="Store Procedure\IT" />
+    <Folder Include="Store Procedure\IT\Activity Task" />
+    <Folder Include="Store Procedure\IT\Domain Users" />
+    <Folder Include="Store Procedure\IT\Item" />
+    <Folder Include="Store Procedure\IT\Master" />
+    <Folder Include="Store Procedure\IT\Schedule Task" />
+    <Folder Include="Store Procedure\Master" />
+    <Folder Include="Store Procedure\Master\Bank Group" />
+    <Folder Include="Store Procedure\Master\Branch" />
+    <Folder Include="Store Procedure\Master\Condition" />
+    <Folder Include="Store Procedure\Master\Currency" />
+    <Folder Include="Store Procedure\Master\Departement" />
+    <Folder Include="Store Procedure\Master\Mapping Approval" />
+    <Folder Include="Store Procedure\Master\Measurement" />
+    <Folder Include="Store Procedure\Master\Privilege" />
+    <Folder Include="Store Procedure\Master\Supplier" />
+    <Folder Include="Store Procedure\Master\Users" />
+    <Folder Include="View" />
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <NotInBuild Include="Connections.txt"/>
+    <NotInBuild Include="Function\Auto Number\fnConvertIntToRoman.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenGAItemNo.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenGAPurchaseOrderDetailNo.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenGAPurchaseOrderNo.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenGAPurchaseReceivedDetailNo.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenGAPurchaseReceivedNo.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenGAPurchaseRequestDetailNo.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenGAPurchaseRequestNo.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenITActivityNo.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenItemCode.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenItemInCode.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenItemInDetailCode.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenItemOutCode.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenItemTransCode.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenItemTransDetailCode.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenScheduleNo.sql"/>
+    <NotInBuild Include="Function\Auto Number\fnGenSupplierCode.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetApprovalState.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetBankGroupToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetBranch.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetBranchDomainToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetBranchToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetCurrencyToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetDepartementToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetGAItemCategoryToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetGAItemGroupToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetGAItemTypeToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetGAPurchaseOrderToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetGASupplierRequestToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetGASupplierToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetITConditionToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetITItemByBranchTypeToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetITItemRepairByOutCodeToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetITItemTransByBranchTypeToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetITItemTypeToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetITProblemTypeToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetITSupplierToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetMappingApprovalEmailCC.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetMappingApprovalEmailTo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetMappingUsersToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetMeasurementToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetMenuPrivilegeAll.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetMenuToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetMenuUsers.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetParamFieldToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetPrivilegeToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetUserByPrivilegeToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetUserEmail.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetUserId.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetUserInfo.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetUserLogon.sql"/>
+    <NotInBuild Include="Store Procedure\General\spGetUserToCombo.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Item\spGAItemList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Category\spGAItemCategoryInsert.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Category\spGAItemCategoryList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Category\spGAItemCategoryUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Category\spGAItemCategoryView.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Group\spGAItemGroupInsert.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Group\spGAItemGroupList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Group\spGAItemGroupUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Group\spGAItemGroupView.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Type\spGAItemTypeInsert.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Type\spGAItemTypeList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Type\spGAItemTypeUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Item Type\spGAItemTypeView.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Supplier\spGASupplierInsert.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Supplier\spGASupplierList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Supplier\spGASupplierUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Master\Supplier\spGASupplierView.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseApprovalLog.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseOrderDetailDelete.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseOrderDetailInsert.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseOrderDetailList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseOrderInsert.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseOrderList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseOrderRequestDetailList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseOrderUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseOrderUpdateStatus.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseOrderView.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseReceivedDetailDelete.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseReceivedDetailInsert.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseReceivedDetailList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseReceivedDetailUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseReceivedDetailView.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseReceivedInsert.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseReceivedList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseReceivedRequestDetailList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseReceivedUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseReceivedUpdateStatus.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseReceivedView.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseRequestApprovalList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseRequestDetailDelete.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseRequestDetailInsert.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseRequestDetailList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseRequestDetailUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseRequestDetailView.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseRequestInsert.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseRequestList.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseRequestUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseRequestUpdateStatus.sql"/>
+    <NotInBuild Include="Store Procedure\General Affair\Purchase\spGAPurchaseRequestView.sql"/>
+    <NotInBuild Include="Store Procedure\Insurance\B2BMail\spB2BSendMail.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Activity Task\spITActivityAssignInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Activity Task\spITActivityAssignList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Activity Task\spITActivityTaskDelete.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Activity Task\spITActivityTaskInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Activity Task\spITActivityTaskList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Activity Task\spITActivityTaskUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Activity Task\spITActivityTaskView.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Domain Users\spBranchDomainInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Domain Users\spBranchDomainUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Domain Users\spBranchDomainView.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemHistory.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemInDetailDelete.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemInDetailInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemInDetailList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemInDetailUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemInDetailView.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemInInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemInList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemInUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemInUpdateStatus.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemInView.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemOutInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemOutList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemOutUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemOutUpdateStatus.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemOutView.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemTransDetailDelete.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemTransDetailInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemTransDetailList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemTransDetailUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemTransDetailView.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemTransInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemTransList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemTransUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemTransUpdateStatus.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemTransView.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Item\spITItemView.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITConditionInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITConditionList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITConditionUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITConditionView.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITItemTypeInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITItemTypeList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITItemTypeUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITItemTypeView.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITProblemTypeInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITProblemTypeList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITProblemTypeUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Master\spITProblemTypeView.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Schedule Task\spScheduleTaskDelete.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Schedule Task\spScheduleTaskFinish.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Schedule Task\spScheduleTaskInsert.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Schedule Task\spScheduleTaskList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Schedule Task\spScheduleTaskNextList.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Schedule Task\spScheduleTaskUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\IT\Schedule Task\spScheduleTaskView.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Bank Group\spBankGroupInsert.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Bank Group\spBankGroupList.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Bank Group\spBankGroupUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Bank Group\spBankGroupView.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Branch\spBranchInsert.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Branch\spBranchList.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Branch\spBranchUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Branch\spBranchView.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Currency\spCurrencyInsert.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Currency\spCurrencyList.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Currency\spCurrencyUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Currency\spCurrencyView.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Departement\spDepartementInsert.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Departement\spDepartementList.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Departement\spDepartementUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Departement\spDepartementView.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Mapping Approval\spMappingApprovalDelete.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Mapping Approval\spMappingApprovalEmailDelete.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Mapping Approval\spMappingApprovalEmailInsert.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Mapping Approval\spMappingApprovalEmailList.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Mapping Approval\spMappingApprovalInsert.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Mapping Approval\spMappingApprovalList.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Mapping Approval\spMappingApprovalUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Mapping Approval\spMappingApprovalView.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Measurement\spMeasurementInsert.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Measurement\spMeasurementList.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Measurement\spMeasurementUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Measurement\spMeasurementView.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Privilege\spPrivilegeInsert.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Privilege\spPrivilegeList.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Privilege\spPrivilegeMenuClear.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Privilege\spPrivilegeMenuList.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Privilege\spPrivilegeMenuUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Privilege\spPrivilegeUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Privilege\spPrivilegeView.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Supplier\spSupplierInsert.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Supplier\spSupplierList.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Supplier\spSupplierUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Supplier\spSupplierView.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Users\spUsersChangePassword.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Users\spUsersInsert.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Users\spUsersList.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Users\spUsersMenuClear.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Users\spUsersMenuUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Users\spUsersUpdate.sql"/>
+    <NotInBuild Include="Store Procedure\Master\Users\spUsersView.sql"/>
+    <NotInBuild Include="View\vwMsMenu.sql"/>
+  </ItemGroup>
+</Project>

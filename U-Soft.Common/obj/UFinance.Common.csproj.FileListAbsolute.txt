@@ -1,0 +1,5 @@
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\AdminFee\UFinance.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\AdminFee\UFinance.Common\bin\Debug\UFinance.Common.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\AdminFee\UFinance.Common\bin\Debug\UFinance.Common.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\AdminFee\UFinance.Common\obj\Debug\UFinance.Common.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\AdminFee\UFinance.Common\obj\Debug\UFinance.Common.pdb

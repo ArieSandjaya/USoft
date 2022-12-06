@@ -1,0 +1,7 @@
+D:\U-Soft\Insurance\bin\Insurance.dll
+D:\U-Soft\Insurance\bin\Insurance.pdb
+D:\U-Soft\Insurance\obj\Debug\ResolveAssemblyReference.cache
+D:\U-Soft\Insurance\obj\Debug\Insurance.dll
+D:\U-Soft\Insurance\obj\Debug\Insurance.pdb
+D:\U-Soft\U-Soft\bin\Insurance.dll
+D:\U-Soft\U-Soft\bin\Insurance.pdb

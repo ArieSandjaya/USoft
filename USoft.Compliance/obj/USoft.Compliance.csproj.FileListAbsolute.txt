@@ -1,0 +1,36 @@
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\bin\Debug\USoft.Compliance.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\bin\Debug\USoft.Compliance.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\bin\Debug\UFinance.Common.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\bin\Debug\USoft.Globalization.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\bin\Debug\AjaxControlToolkit.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\bin\Debug\USoft.AccordionMenu.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\bin\Debug\UFinance.Common.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\bin\Debug\USoft.Globalization.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\bin\Debug\USoft.AccordionMenu.pdb
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\obj\Debug\USoft.Compliance.dll
+C:\Documents and Settings\z.alfarisi\My Documents\Visual Studio 2005\Projects\U-Soft\USoft.Compliance\obj\Debug\USoft.Compliance.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\bin\Debug\USoft.Compliance.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\bin\Debug\USoft.Compliance.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\bin\Debug\UFinance.Common.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\bin\Debug\USoft.Globalization.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\bin\Debug\AjaxControlToolkit.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\bin\Debug\USoft.AccordionMenu.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\bin\Debug\UFinance.Common.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\bin\Debug\USoft.Globalization.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\bin\Debug\USoft.AccordionMenu.pdb
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\obj\Debug\USoft.Compliance.dll
+C:\Documents and Settings\a.sandjaya\My Documents\Visual Studio 2005\Projects\U-SOFT\USoft.Compliance\obj\Debug\USoft.Compliance.pdb
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\bin\Debug\USoft.Compliance.dll
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\bin\Debug\USoft.Compliance.pdb
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\bin\Debug\UFinance.Common.dll
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\bin\Debug\USoft.Globalization.dll
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\bin\Debug\AjaxControlToolkit.dll
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\bin\Debug\USoft.AccordionMenu.dll
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\bin\Debug\UFinance.Common.pdb
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\bin\Debug\USoft.Globalization.pdb
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\bin\Debug\USoft.AccordionMenu.pdb
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\obj\Debug\ResolveAssemblyReference.cache
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\obj\Debug\USoft.Compliance.dll
+D:\Soft\U-Soft\U-Soft\USoft.Compliance\obj\Debug\USoft.Compliance.pdb
